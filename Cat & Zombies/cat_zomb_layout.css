@@ -1,0 +1,97 @@
+:root {
+  --bg-of-forest: "pics/pic_forest_0.jpg"; /* global scope */
+}
+
+.input_container{
+    min-width:600px;
+    max-width: 50%;
+    height:100px;
+}
+.input_container button{
+    position: relative;
+    width:calc(25px + 0.5vem);
+    height:calc(25px + 0.5em);
+}
+.input_container button:nth-child(1){
+    left: 400px;
+}
+.input_container button:nth-child(3){
+    left: 350px;
+    top:25px;
+}
+.input_container button:nth-child(2){
+    left: 297px;
+    top:25px;
+}
+.input_container button:nth-child(4){
+    left: 250px;
+    top:50px;
+}
+
+
+.container {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.container div{
+    background-color: beige;
+    text-align: center;
+    padding: 15px;
+    margin:2px;
+    border:3px;
+    max-width: 400px;
+    max-height:400px;
+    width:calc(40px + 2em);
+    height:calc(40px + 2em);
+    border-style:solid;
+    border-color: black;
+    text-align: center;
+    text-overflow: clip;
+}
+.container .position{
+    background-color: cyan;
+    border-color: red;
+    border-style: dashed;
+}
+.container .marked{
+    border-style:double;
+}
+.container .zombie{
+    background-color: red;
+}
+.container .cat{
+    background-color: aliceblue;
+    border:4px;
+    margin:1px;
+    border-style: solid;
+    border-color: burlywood;
+}
+.container .temp_mark{
+    background-color: rebeccapurple;
+}
+
+.img_container{
+    background-image: var(--bg-of-forest);
+    max-width:500px;
+    width:80%;
+}
+.location_pic{
+    background-image: var(--bg-of-forest);
+}
+.img_container *{
+    position: relative;
+    width: 100%;
+    min-width:340px;
+    min-height: 300px;
+    max-width: 440px;
+    max-height: 400px;
+    height: auto;
+}
+.img_container *:nth-child(2){
+    top:-20em;
+    height:33%;
+    width:calc(30% - 1em);
+}
