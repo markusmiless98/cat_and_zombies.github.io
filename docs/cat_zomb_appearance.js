@@ -30,9 +30,6 @@ function MoveDirection(direction){
     setTimeout(() => {
         HearZombies();
     }, 75);
-    setTimeout(() => {
-        CheckZombies();
-    }, 100);
 }
 
 function CheckAvailableDirection(){
@@ -593,23 +590,6 @@ function DisableButtons()
     button_up.disabled = true;
     button_down.disabled = true;
 
-}
-
-async function CheckZombies()
-{
-    let zomb_list = zomb_positions
-    let i = 0;
-    zomb_list.forEach(element => {
-        let el = document.getElementById("pos_" + i);
-        if (element.innerText == "Zombie"){
-            el.className="temp_mark"
-        }
-        else
-        {
-            el.className=""
-        }
-        i++;
-    });
 }
 
 txt_pos.onchange = SetBackgroundEl()

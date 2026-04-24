@@ -70,9 +70,6 @@
     border-style: solid;
     border-color: burlywood;
 }
-.container .temp_mark{
-    background-color: rebeccapurple;
-}
 
 .img_container{
     background-image: var(--bg-of-forest);
